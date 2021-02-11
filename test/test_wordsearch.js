@@ -51,4 +51,10 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it('should return undefined if the word matrix is an empty array', () => {
+    const result = wordSearch([], 'LDL')
+
+    assert.strictEqual(result, undefined);
+  })
 });
